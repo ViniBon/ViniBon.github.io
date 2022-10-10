@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(51, 51, 51);
+}
+
+#placeholder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#placeholder img{
+    width: 500px;
+    height: 500px;
+    margin: 30px;
+    border: 4.4px solid #000;
+    border-radius: 1pc;
+}
