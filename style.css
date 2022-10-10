@@ -23,13 +23,23 @@ body{
 
 .cabecalho2{
     background-color: #ff8c00;
+    height: 80px;
 }
+
+.cabecalho3{
+    background-color: #414040; 
+}
+
 
 #header-title{
     margin-right: 80px;
 }
 
 #logo{
+    margin-left: 80px;
+}
+
+#logo2{
     margin-left: 80px;
 }
 
@@ -96,6 +106,26 @@ body{
 .title-section{
     text-align: center;
     padding: 20px;
+    background-color: #ff8c00;
+}
+
+.creditos-content{
+    margin: 20px;
+}
+
+.text-creditos{
+    color: #fff;
+}
+
+.links-creditos{
+    text-decoration: none;
+    color: #ff8c00;
+    transition: all 0.8s;
+}
+
+.links-creditos:hover{
+    color: #fcad4e;
+    transition: all 0.8s;
 }
 
 #cards{
@@ -162,16 +192,20 @@ body{
     justify-content: center;
 }
 
-.redes{
+.redes, #voltar-btn{
     width: 45px;
     margin: 15px 8px;
     border-radius: 50%;
     box-shadow: 0 0 6px #242424;
 }
 
-.creditos{
-    background-color: #ff8c00;
+#link-voltar{
+    margin: 5px 13px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
+
 
 .projects{
     margin-top: 80px;
@@ -186,15 +220,488 @@ body{
     font-size: 30pt;
     transition: all 0.8s;
     margin: 10px;
+    text-align: center;
 }
 
 .project-link:hover{
     background-color: #fcad4e;
     color: #000;
     transition: all 0.8s;
+    filter: saturate(280%);
 }
 
 .engloba-links{
     display: flex;
     flex-direction: column;
 }
+
+/* 3840-2160 */
+
+
+/* ------ RESPONSIVIDADE LANDING PAGE ------ */
+
+@media screen and (min-width: 3000px) and (max-width: 8100px){
+
+    .img-fundo-card{
+        width: 100%;
+        height: 360px;
+    }
+    
+    .img-perfil-card{
+        width: 250px;
+        margin-top: 220px;
+    }
+    .cabecalho{
+        height: 220PX;
+    }
+    .personal-card{
+        width: 1800px;
+        height: 1200px;
+        margin-bottom: 30px;
+    }
+
+    .conteudo-card{
+        width: 1200px;
+        font-size: 40pt;
+        padding: 12px;
+        position: absolute;
+        margin-top: 500px;
+        z-index: 1;
+    }
+
+    .project-link{
+        padding: 20px;
+        border-radius: 15px;
+        font-size: 70pt;
+        margin: 10px;
+    }
+
+    #header-title{
+        font-size: 80pt;
+        margin-right: 30px;
+    }
+
+    #logo{
+        margin-left: 30px;
+        width: 200px;
+    }
+
+    .redes, #voltar-btn{
+        width: 150px;
+    }
+
+    .engloba-links{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 2500px) and (max-width: 3000px){
+
+    .img-fundo-card{
+        width: 100%;
+        height: 180px;
+    }
+    
+    .img-perfil-card{
+        width: 165px;
+        margin-top: 80px;
+    }
+    .cabecalho{
+        height: 180PX;
+    }
+    .personal-card{
+        width: 1000px;
+        height: 750px;
+        margin-bottom: 30px;
+    }
+
+    .conteudo-card{
+        width: 800px;
+        font-size: 30pt;
+        padding: 12px;
+        position: absolute;
+        margin-top: 280px;
+        z-index: 1;
+    }
+
+    .project-link{
+        padding: 20px;
+        border-radius: 15px;
+        font-size: 50pt;
+        margin: 10px;
+    }
+
+    #header-title{
+        font-size: 50pt;
+        margin-right: 30px;
+    }
+
+    #logo{
+        margin-left: 30px;
+        width: 150px;
+    }
+
+    .redes, #voltar-btn{
+        width: 90px;
+    }
+
+    .engloba-links{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2500px){
+
+    .img-fundo-card{
+        width: 100%;
+        height: 120px;
+    }
+    
+    .img-perfil-card{
+        width: 105px;
+        margin-top: 40px;
+    }
+    .cabecalho{
+        height: 100PX;
+    }
+    .personal-card{
+        width: 600px;
+        height: 450px;
+        margin-bottom: 30px;
+    }
+
+    .conteudo-card{
+        width: 400px;
+        font-size: 17pt;
+        padding: 12px;
+        position: absolute;
+        margin-top: 140px;
+        z-index: 1;
+    }
+
+    .project-link{
+        padding: 20px;
+        border-radius: 15px;
+        font-size: 28pt;
+        margin: 10px;
+    }
+
+    #header-title{
+        font-size: 30pt;
+        margin-right: 30px;
+    }
+
+    #logo{
+        margin-left: 30px;
+        width: 100px;
+    }
+
+    .redes, #voltar-btn{
+        width: 60px;
+    }
+
+    .engloba-links{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .personal-card{
+        width: 450px;
+        height: 400px;
+    }
+
+    .conteudo-card{
+        width: 300px;
+        padding: 12px;
+        position: absolute;
+        margin-top: 140px;
+        z-index: 1;
+    }
+
+    .project-link{
+        padding: 20px;
+        border-radius: 15px;
+        font-size: 20pt;
+        margin: 10px;
+    }
+
+    #header-title{
+        font-size: 20pt;
+        margin-right: 30px;
+    }
+
+    #logo{
+        margin-left: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 840px){
+    .personal-card{
+        width: 350px;
+        height: 350px;
+        margin-bottom: 30px;
+    }
+
+    .conteudo-card{
+        width: 300px;
+        padding: 12px;
+        position: absolute;
+        margin-top: 140px;
+        z-index: 1;
+    }
+
+    .project-link{
+        padding: 20px;
+        border-radius: 15px;
+        font-size: 15pt;
+        margin: 10px;
+    }
+
+    #header-title{
+        font-size: 20pt;
+        margin-right: 30px;
+    }
+
+    #logo{
+        margin-left: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 660px){
+    .personal-card{
+        width: 250px;
+        height: 320px;
+        margin-bottom: 30px;
+    }
+
+    .conteudo-card{
+        width: 220px;
+        font-size: 10pt;
+        padding: 12px;
+        position: absolute;
+        margin-top: 140px;
+        z-index: 1;
+    }
+
+    .project-link{
+        padding: 20px;
+        border-radius: 15px;
+        font-size: 13pt;
+        margin: 10px;
+    }
+
+    #header-title{
+        font-size: 14pt;
+        margin-right: 30px;
+    }
+
+    #logo{
+        margin-left: 30px;
+    }
+
+    .redes{
+        width: 35px;
+    }
+
+    .engloba-links{
+        margin-bottom: 50px;
+    }
+}
+
+/* ------------------------------------ */
+
+
+/* ------ RESPONSIVIDADE PROJECTS PAGE ------ */
+
+@media screen and (min-width: 3000px) and (max-width: 8000px){
+    .redes, #voltar-btn{
+        width: 150px;
+    }
+    .project{
+        width: 2400px;
+        margin: auto;
+        margin-bottom: 80px;
+    }
+    .project-text{
+        margin-left: 30px;
+        padding: 10px;
+        padding-bottom: 40px;
+        font-size: 40pt;
+    }
+    .link-project{
+        font-size: 40pt;
+        padding: 10px;
+    }
+
+    #logo2{
+        margin-left: 30px;
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 2500px) and (max-width: 3000px){
+    .redes, #voltar-btn{
+        width: 90px;
+    }
+    .project{
+        width: 1500px;
+        margin: auto;
+        margin-bottom: 80px;
+    }
+    .project-text{
+        margin-left: 30px;
+        padding: 10px;
+        padding-bottom: 40px;
+        font-size: 30pt;
+    }
+    .link-project{
+        font-size: 30pt;
+        padding: 10px;
+    }
+
+    #logo2{
+        margin-left: 30px;
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2500px){
+    .redes, #voltar-btn{
+        width: 60px;
+    }
+    .project{
+        width: 1000px;
+        margin: auto;
+        margin-bottom: 80px;
+    }
+    .project-text{
+        margin-left: 30px;
+        padding: 10px;
+        padding-bottom: 40px;
+        font-size: 20pt;
+    }
+    .link-project{
+        font-size: 20pt;
+        padding: 10px;
+    }
+
+    #logo2{
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1040px){
+    .project{
+        width: 700px;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 820px){
+    .project{
+        width: 550px;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+
+    .project-text{
+        margin-left: 30px;
+        padding: 10px;
+        padding-bottom: 40px;
+        font-size: 10pt;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .project{
+        width: 400px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .project-text{
+        margin-left: 30px;
+        padding: 8px;
+        padding-bottom: 35px;
+        font-size: 9pt;
+    }
+
+    .link-project{
+        font-size: 9pt;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .project{
+        width: 300px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .project{
+        width: 250px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .project-text{
+        margin-left: 30px;
+        padding: 8px;
+        padding-bottom: 35px;
+        font-size: 9pt;
+    }
+
+    .link-project{
+        font-size: 9pt;
+        padding: 10px;
+    }
+}
+
+/* ------------------------------------ */
+
+
+/* --------RESPONSIVIDADE CREDITOS---------- */
+
+@media screen and (min-width: 3000px) and (max-width: 8100px){
+    .title-section{
+        font-size: 70pt;
+    }
+}
+
+@media screen and (min-width: 2500px) and (max-width: 3000px){
+    .title-section{
+        font-size: 50pt;
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2500px){
+    .title-section{
+        font-size: 30pt;
+    }
+}
+
+@media screen and (max-width: 1040px){
+    .title-section{
+        font-size: 15pt;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .title-section{
+        font-size: 10pt;
+    }
+}
+
+
+
+
+/* ------------------------------------ */
